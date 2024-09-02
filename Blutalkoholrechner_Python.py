@@ -1,10 +1,4 @@
 # Promille Rechner:
-#
-# Variabeln: A = alkmenge = Alkoholmenge in Gramm
-#            C = blutalkkonzPro = Blutalkoholkonzentration in Promille
-#            P = gewicht = Körpergewicht in Kg
-# 
-# Formel: A = C x P | C = A / P
 
 #Texte:
     
@@ -91,7 +85,7 @@ while end == 1:
 
     print("Um Fortfahren zu können brauche ich einige Informationen von dir.")
 
-    # Promille berechen - Variabeln definieren:
+    # Variabeln definieren:
 
     # Gewicht:  \033[91mXXXXXXXX\033[0m = Rot Färben 92m = Grün 93m = Gelb 94m = Blau
     gewicht = float(input("gib dein \033[91mKörpergewicht\033[0m in Kilogramm an: "))
@@ -100,7 +94,7 @@ while end == 1:
     wein = float(input("Wie viele Gläser (200ml) \033[91mWein\033[0m hast du getrunken?: "))
     schnaps = float(input("Wie viele Gläser (4cl) \033[91mSchnaps\033[0m hast du getrunken?: "))
 
-    # Berechnungen:
+    # Promille berechen:
     # A = alkmenge = Alkoholmenge in Gramm
 
     # alkmengeBier = 250ml * (5/100) * 0,8 = Reiner Alkohol in Gramm = 10 Gramm
@@ -186,7 +180,7 @@ while end == 1:
         print("...")
         time.sleep(1)
         
-        # Berechnungen:
+        # Alkoholabbaugeschwindigkeit berechnen:
         
         alkabbauGe = blutalkkonzPro / 0.1
         # Ausgabe
