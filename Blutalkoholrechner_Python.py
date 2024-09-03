@@ -169,7 +169,7 @@ while end == 1:
     # Alkoholabbaugeschwindigkeit:
     
     print("Möchtest du wissen, wie lange es dauert bis du wieder nüchtern bist? Dann drücke y (yes).")      
-    alkabbau = input("Wenn nicht, dann drücke n (no):   ")
+    alkabbau = input("Wenn nicht, dann drücke n (no):   ").lower()
     
     if alkabbau == "y":
         
@@ -189,8 +189,8 @@ while end == 1:
         
         # Wiederholungsschleife: (While-schleife)
         
-        print("Willst du das Programm beenden? Dann drücke y (yes).")      
-        end = input("Wenn nicht, dann drücke n (no):   ")
+        print("Willst du das Programm beenden? Dann drücke y (yes).")    
+        end = input("Wenn nicht, dann drücke n (no):  ").lower()
         
         if end == "y":
             end = 0
@@ -202,7 +202,7 @@ while end == 1:
         # Wiederholungsschleife: (While-schleife)
 
         print("Willst du das Programm beenden? Dann drücke y (yes).")      
-        end = input("Wenn nicht, dann drücke n (no):   ")
+        end = input("Wenn nicht, dann drücke n (no):   ").lower()
 
         if end == "y":
             end = 0
